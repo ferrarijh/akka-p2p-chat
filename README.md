@@ -1,6 +1,19 @@
 # Akka CLI Chat App(p2p)
 Simple chat-app using akka pubsub.
 
+## Demo
+<div>
+    <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/1.png">
+    <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/2.png">
+    <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/3.png">
+    <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/4.png">
+    <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/5.png">
+    <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/6.png">
+    <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/7.png">
+    <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/8.png">
+    <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/9.png">
+</div>
+
 ## Packages
 ```kotlin
 import akka.actor.AbstractActor
