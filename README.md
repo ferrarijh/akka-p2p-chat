@@ -2,7 +2,7 @@
 Simple chat-app using akka pubsub.
 
 ## Demo
-<div">
+<div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/1.png">
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/2.png">
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/3.png">
