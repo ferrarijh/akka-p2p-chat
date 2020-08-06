@@ -1,34 +1,34 @@
 # Akka CLI Chat App(p2p)
-Simple p2p chat-app using akka pubsub.
+Simple chat-app using akka pubsub.
 
 ## Packages
-'''kotlin
+```kotlin
 import akka.actor.AbstractActor
 import akka.actor.ActorRef
 import akka.cluster.pubsub.DistributedPubSub
 import akka.cluster.pubsub.DistributedPubSubMediator
 import mu.KLogging
 import java.io.Serializable
-'''
+```
 
 ## class AbstractActorKL
-'''kotlin
+```kotlin
 abstract class AbstractActorKL: AbstractActor(){
     companion object: KLogging()
 }
-'''
+```
 AbstractActorKL class defined just for convenient implementation of 'logger' in KLogging package.
 Other classes will inherit AbstractActorKL instead of AbstractActor.
 
 ## Custom messages
-'''kotlin
+```kotlin
 class UserMessage(val from: String, val content: String): Serializable
 class ConnectAck(val name: String): Serializable
 class Bye(val name: String): Serializable
-'''
+```
 
 ## User actor
-'''kotlin
+```kotlin
 class User(private var name: String): AbstractActorKL(){  //User Actor sends & displays message
     private val connected = mutableMapOf<String, Boolean>()
     private val path: String = "/user/destination"
@@ -67,4 +67,4 @@ class User(private var name: String): AbstractActorKL(){  //User Actor sends & d
             connected[it.name] = false
         }.build()
 }
-'''
+```
