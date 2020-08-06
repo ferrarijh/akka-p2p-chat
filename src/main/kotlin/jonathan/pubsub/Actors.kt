@@ -23,11 +23,13 @@ class User(private var name: String): AbstractActorKL(){  //User Actor sends & d
         mediator.tell(DistributedPubSubMediator.Put(self), self)
     }
 
-    override fun createReceive() = receiveBuilder()
-        .match(DistributedPubSubMediator.SubscribeAck::class.java) {
-            println(">> displayer [${self.path().toString()}] subscribed successfully.")    //first, inform subscription to self
-            mediator.tell(DistributedPubSubMediator.SendToAll(path, ConnectAck(name), true), self)  //then, inform others
-        }.match(ConnectAck::class.java) {
+    override fun preStart() {
+        super.preStart()
+        mediator.tell(DistributedPubSubMediator.SendToAll(path, ConnectAck(name), true), self)
+    }
+
+    override fun createReceive(): Receive = receiveBuilder()
+        .match(ConnectAck::class.java) {
             if (connected[it.name] != true) {
                 connected[it.name] = true
                 println("\r>> new user '${it.name}' connected!")
@@ -36,6 +38,7 @@ class User(private var name: String): AbstractActorKL(){  //User Actor sends & d
         }.match(String::class.java){
             if (it=="bye"){
                 mediator.tell(DistributedPubSubMediator.SendToAll(path, Bye(name), true), self)
+                print(">> See you again!")
                 context.system.terminate()
             }else {
                 val msg = UserMessage(name, it)
@@ -50,6 +53,7 @@ class User(private var name: String): AbstractActorKL(){  //User Actor sends & d
             connected[it.name] = false
         }.build()
 }
+
 
 
 /*--- below classes are just for reference... ---*/

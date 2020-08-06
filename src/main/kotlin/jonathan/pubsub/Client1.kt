@@ -4,7 +4,8 @@ import akka.actor.ActorRef
 import akka.actor.ActorSystem
 import akka.actor.Props
 import com.typesafe.config.ConfigFactory
-import kotlinx.coroutines.*
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
 import mu.KLogging
 
 fun main() = runBlocking<Unit>{
@@ -22,6 +23,7 @@ fun main() = runBlocking<Unit>{
         print(">> [me]")
         input = readLine() as String
         user.tell(input, ActorRef.noSender())
+        if (input=="bye")
+            break
     } while (true)
 }
-
