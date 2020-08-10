@@ -2,6 +2,7 @@
 Simple chat-app using akka pubsub.
 
 ## Demo
+jonathan connects at localhost:2551, trevor connects at localhost:2552
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/1.png">
 </div>
