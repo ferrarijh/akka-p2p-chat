@@ -32,6 +32,8 @@ Jonathan sees Trevor's connection.
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/8.png">
 </div>
+System terminates on "bye".
+<br></br>
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/9.png">
 </div>
