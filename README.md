@@ -6,12 +6,14 @@ jonathan connects at localhost:2551, trevor connects at localhost:2552
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/1.png">
 </div>
+jonathan connects.</br>
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/2.png">
 </div>
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/3.png">
 </div>
+jonathan sees trevor's connection.</br>
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/4.png">
 </div>
