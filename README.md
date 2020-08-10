@@ -2,14 +2,15 @@
 Simple chat-app using akka pubsub.
 
 ## Demo
-jonathan connects at localhost:2551, trevor connects at localhost:2552
+Jonathan connects at localhost:2551, Trevor connects at localhost:2552
+<br></br>
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/1.png">
 </div>
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/2.png">
 </div>
-jonathan connects.
+Jonathan connects.
 <br></br>
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/3.png">
@@ -17,7 +18,7 @@ jonathan connects.
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/4.png">
 </div>
-jonathan sees trevor's connection.
+Jonathan sees Trevor's connection.
 <br></br>
 <div>
     <img src="https://github.com/ferrarijh/akka-p2p-chat/blob/master/demo-screenshot/5.png">
